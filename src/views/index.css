@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
+
+img{
+    width: 10rem;
+}
+
+.table>:not(caption)>*>*{
+    padding: 1.5rem 3.5rem;
+}
+
+body{
+    background: #F4F7FE;
+}
+
+.btn{
+    background: #190793;
+    border-radius: 2rem;
+    color: white;
+}
+
+.btn:hover{
+    color: black;
+    border: 1px solid #190793;
+    transition: all .5s ease-in-out;
+}
+
+table, .header, .navbar, .btn, form{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.navbar{
+    font-weight: bold;
+}

@@ -1,0 +1,27 @@
+<h1 class="mt-5 mb-4 header text-center shadow-lg">Add New Product</h1>
+<% if(errorMessage){ %>
+    <div class="alert alert-danger" role="alert">
+        <%= errorMessage %> 
+    </div>
+<% } %>
+<form action="/" , method="post" class="bg-white shadow-lg p-3" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="name" class="form-label">Product Name</label>
+        <input type="text" class="form-control bg-light" id="name" name="name">
+    </div>
+    <div class="mb-3">
+        <label for="desc" class="form-label">Product Description</label>
+        <textarea class="form-control bg-light" id="desc" name="desc" rows="3" required></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">Product Price</label>
+        <input type="number" class="form-control bg-light" id="price" name="price">
+    </div>
+    <div class="mb-3">
+        <label for="imageUrl" class="form-label">Upload Image</label>
+        <input type="file" id="imageUrl" name="imageUrl" accept="images/*">
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn">Add Product</button>
+    </div>
+</form>
