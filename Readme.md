@@ -4,6 +4,10 @@
 
 This is a backend project built with Node.js and Express.js, incorporating authentication, cookie parsing, session management, Express.js layout, and Multer for handling file uploads.
 
+
+![Image](https://github.com/Rajdeep777/Inventory-Management-System/assets/74129008/924c29e9-d503-4c2d-9d15-af6d54103303)
+
+
 ## Table of Contents
 
 - [Installation](#installation)
