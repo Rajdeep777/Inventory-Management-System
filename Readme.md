@@ -9,7 +9,7 @@ This is a backend project built with Node.js and Express.js, incorporating authe
 
 ![Login Page](https://github.com/Rajdeep777/Inventory-Management-System/assets/74129008/9c321674-b4fd-4c04-9c96-22730c8b746e)
 
-![Product Page](https://github.com/Rajdeep777/Inventory-Management-System/assets/74129008/f1b34f2c-8d4f-4f2f-84ca-df8d0d85f1e3)
+![Product Page](https://github.com/Rajdeep777/Inventory-Management-System/assets/74129008/faf61c5d-e16f-41c2-a453-4597063dbb2f)
 
 ![Add Product Page](https://github.com/Rajdeep777/Inventory-Management-System/assets/74129008/4b363ebe-ff67-47d0-b1a0-fd334df01349)
 
