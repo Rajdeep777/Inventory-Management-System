@@ -2,20 +2,16 @@
 
 .header{
     background: #FFFFFF;
+}
+
+.alert-header, .header{
     color: black;
     padding: 1rem;
     border-radius: 1rem;
-    font-family: 'Fira Sans', sans-serif;
 }
 
 img{
     width: 10rem;
-}
-
-.alert-header{
-    color: black;
-    padding: 1rem;
-    border-radius: 1rem;
 }
 
 .table>:not(caption)>*>*{
@@ -25,7 +21,6 @@ img{
 
 form{
     border-radius: 1rem;
-    font-family: 'Fira Sans', sans-serif;
 }
 
 .btn{
@@ -42,5 +37,8 @@ form{
 
 .navbar{
     font-weight: bold;
+}
+
+table, form, .navbar, .header, .btn, .alert{
     font-family: 'Fira Sans', sans-serif;
 }
