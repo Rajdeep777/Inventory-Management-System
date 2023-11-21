@@ -3,11 +3,11 @@ import ProductModel from '../models/product.model.js'
 class ProductController{
     getProducts(req, res, next) {
         let products = ProductModel.getAll()
-        res.render('products', {products})
+        res.render('products', {products, userEmail: req.session.userEmail})
     }
     
     getAddProduct(req, res, next){
-        res.render('product-form', {errorMessage : null})
+        res.render('product-form', {errorMessage : null, userEmail: req.session.userEmail})
     }
 
     getUpdateProductView(req, res, next) {
@@ -15,7 +15,7 @@ class ProductController{
         const id = req.params.id
         const productFound = ProductModel.getById(id)
         if (productFound) {
-            res.render('update-product', {product: productFound, errorMessage: null})
+            res.render('update-product', {product: productFound, errorMessage: null, userEmail: req.session.userEmail})
         }
         // else return error
         else {
@@ -34,7 +34,7 @@ class ProductController{
         const imageUrl = 'images/' + req.file.filename
         ProductModel.add(name, desc, price, imageUrl)
         let products = ProductModel.getAll()
-        res.render('products', {products})
+        res.render('products', {products, userEmail: req.session.userEmail})
     }
 
     deleteProduct(req, res) {
