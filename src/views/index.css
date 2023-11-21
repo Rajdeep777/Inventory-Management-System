@@ -4,6 +4,10 @@ img{
     width: 10rem;
 }
 
+.table-container{
+    overflow-x: auto;
+}
+
 .table>:not(caption)>*>*{
     padding: 1.5rem 3.5rem;
 }
