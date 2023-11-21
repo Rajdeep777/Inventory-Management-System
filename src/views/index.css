@@ -28,7 +28,7 @@ body{
     transition: all .5s ease-in-out;
 }
 
-table, .header, .navbar, .btn, form, .alert{
+table, .navbar, .btn, form, .alert{
     font-family: 'Fira Sans', sans-serif;
 }
 
