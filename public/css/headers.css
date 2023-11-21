@@ -11,6 +11,12 @@ img{
     width: 10rem;
 }
 
+.alert-header{
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
 .table>:not(caption)>*>*{
     padding: 1.5rem 3.5rem;
 }
