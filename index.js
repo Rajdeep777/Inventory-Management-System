@@ -1,5 +1,6 @@
 import express from "express";
 import ProductController from "./src/controllers/product.controller.js";
+import dotenv from 'dotenv'
 import path from 'path'
 import ejsLayouts from "express-ejs-layouts";
 import validationMiddleware from "./src/middlewares/validatoin.middleware.js";
@@ -9,7 +10,8 @@ import { setLastVisit } from "./src/middlewares/lastVisit.middleware.js";
 import { auth } from './src/middlewares/auth.middleware.js'
 import session from "express-session";
 import cookieParser from "cookie-parser";
-
+dotenv.config()
+const PORT = process.env.PORT
 const app = express()
 
 app.use(express.static('public'))
@@ -56,6 +58,6 @@ app.post('/update-product', auth, productController.postUpdateProduct)
 app.post('/delete-product/:id', auth, productController.deleteProduct)
 
 
-app.listen((8000), (req, res) => {
-    console.log('server is listening at port', 8000);
+app.listen(PORT, (req, res) => {
+  console.log(`server is listening at http://localhost:${PORT}`);
 })
